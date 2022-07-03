@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url(../imagem/bg-repeat.jpg);
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main{
+   display: flex;
+   height: 100%;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.container-titulo-info{
+    width: 300px;
+    max-width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.titulo-informativo{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 900;
+    width:287.25px;
+    max-width: 90%;
+    min-height:42.99px;
+    margin-bottom: 11px;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-informativo{
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    max-width: 300px;
+   
+}
+
+
+
+.formulario-container{
+    display: flex;
+    background-color:#FFFFFF;
+    width: 340px;
+    max-width: 100%;
+    min-height:373px;
+    margin: 12px 50px 12px 410px;
+}
+
+.form-control{
+   margin-bottom: 15px;
+   padding: 20px;
+   
+}
+
+.form-control input, textarea{
+
+    border: 1px solid #000000;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    width: 100%;
+    padding: 10px;
+}
+
+.campos-obrigatorio{
+    color: #000000;
+    font-size: 15px;
+    margin: 15px 15px;
+}
+
+
+
+.btn{
+    background-color:#3CCC87;
+    color: #FFFFFF;
+    padding: 10px 127px;
+    margin: 11px 20px;
+    margin-bottom: 21px;
+    border-radius: 5px;
+    border:none;
+}
+
+
+
+.validacao{
+    color: #F52E2E;
+    font-size: 8px; 
+    
+}
+
+.form-con{
+    border: 1px solid #00C22B;
+    
+
+}
+
+.form-con{
+    border: 1px solid #F52E2E;
+   
+}
+
+
