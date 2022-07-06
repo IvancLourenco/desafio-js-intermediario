@@ -1,25 +1,23 @@
-const submitButton = document.querySelector("#submit-button");
-const nomeUsuario = document.querySelector("#nome");
-const emailUsuario = document.querySelector("#email");
-const telefoneUsuario = document.querySelector("#telefone");
-const mensagemUsuario = document.querySelector("#mensagem");
+const formulario = document.getElementById("formulario");
+const inputForm = document.querySelectorAll ( ".input");
+const mensagemErro= document.getElementsByClassName('validacao')
 
-const erroMessage = document.querySelectorAll(".validacao");
-
-  submitButton.addEventListener("click", (e) => {
-    e.preventDefault()
-
-    const nomeValue = nomeUsuario.value;
-    const emailValue = emailUsuario.value;
-
-    if(nomeValue === "" || emailValue === "") {
-       erroMessage.forEach (element => {
-        element.textContent = "campo obrigatório";
-        erroMessage.classList = ".validacao";
-        return;
-       
-     });
-   }});
+formulario.addEventListener("submit", function (e) {
+     inputForm.forEach(function (input, indice){
+      if(input.value == ""){
+        input.classList.remove("correto")
+        input.classList.add("erro")
+        mensagemErro[indice].classList.add("mostrar-mensagem")
+        e.preventDefault() 
+      }else{
+        input.classList.remove("erro")
+        input.classList.add("correto")
+        mensagemErro[indice].classList.remove("mostrar-mensagem")
+        e.preventDefault() 
+      }
+     })
+     return
+})
 
   
 

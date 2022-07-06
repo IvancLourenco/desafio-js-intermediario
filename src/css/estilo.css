@@ -2,45 +2,37 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
-    width: 100%;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background: url(../imagem/bg-repeat.jpg);
-    background-size:contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .container-main{
    display: flex;
-   height: 100%;
-   width: 100%;
    align-items: center;
    justify-content: center;
+   width: 100%;
+   background-image: url(../imagem/bg-repeat.jpg);
+   background-size:contain; 
+   min-height: 100vh; 
 }
 
 .container-titulo-info{
-    width: 300px;
+    min-width: 300px;
     max-width:100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    margin: 12px 50px 12px 70px;
 }
 
 .titulo-informativo{
     color: #FFFFFF;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 24px;
     font-weight: 900;
-    width:287.25px;
-    max-width: 90%;
-    min-height:42.99px;
+    max-width:280px;
+    min-height:46px;
     margin-bottom: 11px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 }
 
@@ -58,8 +50,7 @@ body{
 .formulario-container{
     display: flex;
     background-color:#FFFFFF;
-    width: 340px;
-    max-width: 100%;
+    max-width: 340px;
     min-height:373px;
     margin: 12px 50px 12px 410px;
 }
@@ -82,10 +73,16 @@ body{
     padding: 10px;
 }
 
-.campos-obrigatorio{
-    color: #000000;
+.form-control .input::placeholder{
+    font-weight: 700;
+    padding: 9px;
+    color: #A8A8A8;
     font-size: 15px;
-    margin: 15px 15px;
+}
+
+.campos-obrigatorio{
+    margin: 15px;
+    width: 100%;
 }
 
 
@@ -105,18 +102,20 @@ body{
 .validacao{
     color: #F52E2E;
     font-size: 8px; 
-    
+    font-weight: 400;
+    display: none;
 }
 
-.form-con{
+.mostrar-mensagem{
+    display: block;
+}
+
+.form-control .input.correto{
     border: 1px solid #00C22B;
-    
-
 }
 
-.form-con{
-    border: 1px solid #F52E2E;
-   
+.form-control .input.erro{
+    border: 1px solid #F52E2E; 
 }
 
 
